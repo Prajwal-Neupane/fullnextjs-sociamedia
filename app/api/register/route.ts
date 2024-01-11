@@ -20,7 +20,6 @@ export const POST = async (req: Request) => {
 
     return NextResponse.json(user, { status: 201 });
   } catch (error: any) {
-    console.error("Prisma query error:", error);
     return NextResponse.json(
       {
         Error: "Error creating user.",
